@@ -3,7 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  apiKey: '$2a$10$XOwttauDbBtvYuCsYh8WGuUmYgaYANfGV4QVDRYvklYRcV6TW9w9C',
+  baseURL: 'https://www.potterapi.com/v1/'
+
 };
 
 /*

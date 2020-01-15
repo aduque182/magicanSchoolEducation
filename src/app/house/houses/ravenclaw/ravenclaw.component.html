@@ -1,0 +1,94 @@
+<head>
+</head>
+
+<body>
+  <div id="content">
+    <header id="header">
+      <h2>{{titulo}}</h2> 
+    </header>
+
+    <div id="body">
+      <section id="content_section">
+        <article class="article">
+
+          <div *ngIf="!students">
+            Cargando listado de houses...
+          </div>
+
+          <div *ngIf="students">
+            <table class="table">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">Name</th>
+                  <th scope="col">Role</th>
+                  <th scope="col">House</th>
+                  <th scope="col">School</th>
+                  <th scope="col">Blood Status</th>
+                </tr>
+              </thead>
+              <tbody *ngFor="let student of students | paginate: { itemsPerPage: 4, currentPage: p }">
+                <tr>
+
+                  <td>{{student.name}}</td>
+                  <td>{{student.role}}</td>
+                  <td>{{student.house}}</td>
+                  <td>{{student.school}}</td>
+                  <td>{{student.bloodStatus}}</td>
+                </tr>
+
+              </tbody>
+              
+              
+            </table>
+            <pagination-controls (pageChange)="p = $event"></pagination-controls>
+            <button type="button" class="btn btn-primary" [routerLink]="['/home']" [routerLinkActive]="['activado']">Back</button>
+          </div>
+          
+        </article>
+      </section>
+
+      <section id="info_section">
+        <article id="logo">
+          <div class="module1">
+            <img id="img" src="../../../../assets/img/r.jpg">
+          </div>
+        </article>
+        <article id="info">
+
+
+          <div class="module2">
+            <div *ngIf="!houses">
+              Cargando listado de houses...
+            </div>
+
+            <div *ngIf="houses">
+              <table class="table">
+                <tbody *ngFor="let house of houses">
+                  <tr>
+                    <td><strong>NAME</strong></td>
+                    <td>{{house.name}}</td>
+                  </tr>
+                  
+                  <tr>
+                    <td><strong>FOUNDER</strong></td>
+                    <td>{{house.founder}}</td>
+                  </tr>
+                  <tr>
+                    <td><strong>HEAD OF HOUSE</strong></td>
+                    <td>{{house.headOfHouse}}</td>
+                  </tr>
+
+                  <tr>
+                    <td><strong>MASCOT</strong></td>
+                    <td>{{house.mascot}}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        </article>
+      </section>
+    </div>
+  </div>
+</body>

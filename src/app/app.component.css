@@ -1,0 +1,15 @@
+body {
+    margin-top: 260px;
+    font-family: 'Montserrat', sans-serif;
+
+    background-size: cover;
+}
+
+#header{
+    background: rgb(28, 45, 99);
+    color:white;
+    margin: 0px;
+    height: 90px;
+    line-height: 90px;
+}
+

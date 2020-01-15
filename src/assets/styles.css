@@ -1,0 +1,115 @@
+#content{
+ border: 1px solid #eee;
+ margin-top: 3px;
+ background: white;
+ box-shadow: 0px 2px 5px #ccc;
+padding: 10PX;;
+overflow: hidden;
+opacity: 0.8;
+width: 1020px;
+    height: auto;
+    margin: 40px auto;
+    position: relative;
+    margin-top: 0px ;
+} 
+
+#header{
+    background: rgb(92, 102, 136);
+    color:white;
+    margin: 5px;
+    height: 80px;
+    line-height: 90px;
+    text-align: center;  
+    vertical-align:middle;
+    padding: 20px;
+
+}
+
+#tittle{
+    color: rgb(179, 125, 56);
+    text-align: center; 
+    background-color: rgb(12, 12, 12);
+    opacity: .5;
+    font-style:italic;
+  font-weight:bold;
+  font-size:2em;
+  
+  font-family:'Helvetica','Verdana','Monaco',sans-serif;
+   
+}
+
+#body {
+    position: relative;
+    width: 100%;
+    height: auto;
+    
+}
+
+#content_section {
+    position: relative;
+    float: right;
+    width: auto;
+    margin: 4px;
+}
+
+#info_section {
+    position: relative;
+    float: left;
+    width: 280px;
+    margin: 4px;	
+}
+#img{
+     width: 220px;
+     height: 210px;
+     display:block;
+     margin:auto;
+}
+
+
+.article {
+    position: relative;
+    width: 690px;
+    height: auto;
+    /* background: #0f0; */
+    margin: 5px;
+    text-align: center;
+    
+}
+.table{
+    position: relative;
+    text-align: left;
+    
+}
+
+.module1 {
+    position: relative;
+    width: 270px;
+    height: 210px;
+    /* background: #58f; */
+    margin: 5px;
+}
+
+.module2 {
+    position: relative;
+    width: 270px;
+    height: 290px;
+    /* background: rgb(255, 85, 178); */
+    margin: 5px;
+}
+
+
+#main .jumbotron{
+    padding: 90px;
+    margin-top: 110px;
+    border-radius: 15px;
+    opacity: 0.8 ;
+    
+    display: block;
+
+}
+
+
+
+
+
+
